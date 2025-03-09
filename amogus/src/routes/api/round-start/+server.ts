@@ -12,7 +12,7 @@ export const POST = async ({ request }: RequestEvent) => {
         const body = await request.json();
         
         const command = new InvokeCommand({
-            FunctionName: 'your-lambda-function-name',  // Replace with your Lambda function name
+            FunctionName: 'amogus-lambda',  // Replace with your Lambda function name
             Payload: Buffer.from(JSON.stringify({ emails: body.emails }))
         });
         
