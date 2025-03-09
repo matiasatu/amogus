@@ -4,7 +4,7 @@ import { LambdaClient, InvokeCommand } from '@aws-sdk/client-lambda';
 
 // Initialize Lambda client
 const lambda = new LambdaClient({
-    region: 'us-east-1' // Change to your Lambda's region
+    region: 'us-east-2' // Change to your Lambda's region
 });
 
 export const POST = async ({ request }: RequestEvent) => {
